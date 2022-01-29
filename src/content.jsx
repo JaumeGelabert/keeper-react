@@ -1,11 +1,16 @@
 import Card from './card';
+import cardsInfo from './cardInfo';
+
+function CreateCards(card) {
+    return(
+        <Card titulo={card.titulo} text={card.texto} link={card.link} />
+    );
+};
 
 function Content() {
     return(
         <div className="content">
-            <Card titulo="1" text="Texto 1" link="#"/>   
-            <Card titulo="2" text="Texto 2" link="#"/>   
-            <Card titulo="3" text="Texto 3" link="#"/>   
+            {cardsInfo.map(CreateCards)}
         </div>
     );
 }
