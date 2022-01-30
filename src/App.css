@@ -1,13 +1,45 @@
-p, h1 {
+p,
+h1 {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
   background-color: rgb(238, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
   padding: 10px;
+}
+
+.username-pill {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username-pill i.arrow {
+  margin-left: 3px;
+}
+
+.username-pill a {
+  font-weight: 600;
+  color: black;
+}
+
+.foto-perfil img {
+  height: 38px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .content {
@@ -16,13 +48,13 @@ p, h1 {
   justify-content: center;
 }
 
-.card{
+.card {
   margin: 20px;
   padding: 10px;
-  background-color:rgb(221, 221, 221);
+  background-color: rgb(221, 221, 221);
   width: 290px;
   height: 140px;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .footer {
