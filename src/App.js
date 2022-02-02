@@ -1,16 +1,12 @@
-import Header from './header';
-import Content from './content';
-import Footer from './footer';
+import contentLogged from './main';
 
 import './App.css';
 
+var isLoggedIn = true;
+
 function App() {
   return (
-    <div>
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+    isLoggedIn ? contentLogged() : <h1>Loggeate</h1>
   );
 }
 
