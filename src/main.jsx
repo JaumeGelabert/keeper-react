@@ -19,11 +19,20 @@ function ContentLogged() {
         setTime(newTime);
     }
 
+    const [headingText, setHeadingText] = useState("Valor incial");
+    function HandleClick() {
+        setHeadingText("Submited");
+    }
+
     return(      
         <div>
             <Header />
             <Content />
             <h1>{time}</h1>
+            <div>
+                <h3>{headingText}</h3>
+                <button onClick={HandleClick}>Event Handling</button>
+            </div>
             <button onClick={UpdateTime}>Actualizar tiempo</button>
             <p style = {isDone ? terminado : null}>Comprar bolis</p>
             <Footer />
